@@ -1,0 +1,38 @@
+.color-white {
+    color: $color-white !important;
+  }
+  .color-off-white {
+    color: $color-off-white !important;
+  }
+  .color-dark {
+    color: $color-dark !important;
+  }
+  
+  .color-primary {
+    color: $color-primary !important;
+  
+    &-dark {
+      color: $color-primary-dark !important;
+    }
+  }
+  
+  .bg-dark {
+    background-color: $bg-dark !important;
+  }
+  
+  .bg-light {
+    background-color: $bg-light !important;
+  }
+  
+  .bg-primary {
+    background-color: $color-primary !important;
+  }
+  
+  .border-top {
+    border-color: #d8dddf !important;
+  }
+  
+  .border-primary-dark {
+    border-color: $color-primary-dark !important;
+  }
+  

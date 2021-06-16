@@ -1,0 +1,75 @@
+.slick-arrow {
+    font-size: 0px;
+    border: 2px solid $color-primary-dark;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    background-color: $bg-dark;
+    box-shadow: none !important;
+    outline: none !important;
+  
+    &.slick-prev,
+    &.slick-next {
+      position: absolute;
+      top: 50%;
+      margin-top: -16px;
+      z-index: 50;
+  
+      &:before {
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: 900;
+        font-size: 14px;
+        color: $color-primary-dark;
+      }
+    }
+  
+    &.slick-prev {
+      left: 0px;
+      text-align: center;
+  
+      &:before {
+        content: "\f053";
+      }
+    }
+  
+    &.slick-next {
+      right: 0px;
+      &:before {
+        content: "\f054";
+        padding-left: 3px;
+      }
+    }
+  }
+  
+  .status-card-wrapper {
+    .slick-arrow {
+      background-color: #ffffff !important;
+    }
+  }
+  
+  .slick-dots {
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    margin-top: 10px;
+    // position: absolute;
+    // bottom: -30px;
+    li {
+      list-style: none;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      border-radius: 10px;
+      background-color: $color-off-white;
+      &.slick-active {
+        background-color: $color-primary-dark;
+      }
+      button {
+        display: none;
+      }
+    }
+  }
+  

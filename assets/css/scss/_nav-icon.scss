@@ -1,0 +1,68 @@
+.nav-icon {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    z-index: 1000;
+    cursor: pointer;
+  
+    @media (max-width: 768px) {
+      transform: scale(0.7);
+    }
+  
+    span {
+      margin: 0 auto;
+      position: relative;
+      top: 12px;
+      width: 30px;
+      height: 3px;
+      background-color: #ffffff;
+      display: block;
+      transition-duration: 0s;
+      transition-delay: 0.2s;
+  
+      &:before,
+      &:after {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        display: block;
+      }
+  
+      &:before {
+        margin-top: -12px;
+        transition-property: margin, transform;
+        transition-duration: 0.2s;
+        transition-delay: 0.2s, 0s;
+      }
+  
+      &:after {
+        margin-top: 12px;
+        transition-property: margin, transform;
+        transition-duration: 0.2s;
+        transition-delay: 0.2s, 0s;
+      }
+    }
+  }
+  
+  .nav-icon.active {
+    span {
+      background-color: rgba(0, 0, 0, 0);
+      -webkit-transition-delay: 0.2s;
+      transition-delay: 0.2s;
+    }
+  
+    span:before {
+      margin-top: 0;
+      transform: rotate(45deg);
+      transition-delay: 0s, 0.2s;
+    }
+    span:after {
+      margin-top: 0;
+      transform: rotate(-45deg);
+      transition-delay: 0s, 0.2s;
+    }
+  }
+  

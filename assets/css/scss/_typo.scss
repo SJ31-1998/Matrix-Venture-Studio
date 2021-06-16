@@ -1,0 +1,89 @@
+.base-font {
+    font-family: $base-font;
+  }
+  
+  .heading-font {
+    font-family: $heading-font;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $heading-font;
+  }
+  
+  .text-light {
+    font-weight: 300;
+    color: inherit !important;
+  }
+  
+  .text-regular {
+    font-weight: 400;
+  }
+  
+  .text-medium {
+    font-weight: 500;
+  }
+  
+  .text-semibold {
+    font-weight: 600;
+  }
+  
+  .text-bold {
+    font-weight: 700;
+  }
+  
+  .text-sm {
+    font-size: 14px;
+  }
+  
+  .text-lg {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  h1 {
+    font-size: 56px;
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
+  }
+  
+  h2 {
+    font-size: 42px;
+    @media (max-width: 768px) {
+      font-size: 35px;
+    }
+  }
+  
+  h3 {
+    font-size: 36px;
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+  }
+  
+  h4 {
+    font-size: 32px;
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  
+  h5 {
+    font-size: 24px;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  
+  h6 {
+    font-size: 21px;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  

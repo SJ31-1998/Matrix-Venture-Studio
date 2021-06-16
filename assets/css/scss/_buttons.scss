@@ -1,0 +1,48 @@
+.btn {
+    border-radius: 2px;
+    padding: 11px 32px;
+    text-transform: uppercase;
+    font-family: $heading-font;
+    font-weight: 500;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  .btn-primary {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-dark !important;
+  
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: darken($color-primary, 5%) !important;
+      border-color: darken($color-primary, 5%) !important;
+    }
+  }
+  
+  .btn-outline-primary {
+    border-color: $color-primary;
+    color: $color-primary;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: darken($color-primary, 5%) !important;
+      border-color: darken($color-primary, 5%) !important;
+      color: $color-dark !important;
+    }
+  }
+  
+  .btn-dark {
+    background-color: $color-dark;
+    border-color: $color-dark;
+    color: $color-primary !important;
+  
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: darken($color-dark, 5%) !important;
+      border-color: darken($color-dark, 5%) !important;
+    }
+  }
+  

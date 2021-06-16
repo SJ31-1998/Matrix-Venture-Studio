@@ -1,0 +1,41 @@
+header {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    .vh-100 {
+      min-height: 660px;
+    }
+  
+    @media (max-width: 768px) {
+      .btn {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  
+  .section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  
+    @media (max-width: 768px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+  
+  .section-padding-top {
+    padding-top: 120px;
+    @media (max-width: 768px) {
+      padding-top: 80px;
+    }
+  }
+  
+  .section-padding-bottom {
+    padding-bottom: 120px;
+    @media (max-width: 768px) {
+      padding-bottom: 80px;
+    }
+  }
+  

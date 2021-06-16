@@ -1,0 +1,90 @@
+@import "card-stack";
+
+.status-card {
+  border-left: 3px solid $color-primary;
+  padding-left: 30px;
+
+  @media (max-width: 768px) {
+    padding-left: 20px;
+  }
+}
+
+.what-we-do-card {
+  margin-bottom: 45px;
+
+  &-img {
+    height: 200px;
+    width: 100%;
+    background-color: $color-off-white;
+    margin-bottom: 30px;
+  }
+
+  &-steps {
+    width: 42px;
+    height: 42px;
+    display: block;
+    margin-left: auto;
+    background-color: $color-primary-dark;
+    font-family: $heading-font;
+    font-weight: bold;
+    color: $color-white;
+    text-align: center;
+    line-height: 42px;
+  }
+
+  &-text {
+    padding-left: 30px;
+    position: relative;
+
+    @media (max-width: 768px) {
+      padding-left: 20px;
+    }
+
+    &:before {
+      position: absolute;
+      content: " ";
+      width: 3px;
+      height: 30px;
+      background-color: $color-primary-dark;
+      left: 0px;
+      top: -3px;
+      @media (max-width: 768px) {
+        height: 25px;
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+.status-card-padding {
+  padding: 75px 30px;
+
+  @media (min-width: 1200px) {
+    min-height: 351px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 55px 45px;
+    min-height: 280px;
+  }
+}
+
+.review-card {
+  outline: none !important;
+  box-shadow: none !important;
+  &-wrapper {
+    max-width: 830px;
+    padding: 0 30px;
+    display: inline-block;
+
+    img {
+      display: inline-block;
+      max-width: 200px;
+      max-height: 70px;
+    }
+  }
+}

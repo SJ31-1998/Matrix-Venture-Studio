@@ -1,0 +1,18 @@
+.form-control {
+    border-radius: 2px;
+    border: 1px solid $color-dark !important;
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: $color-dark !important;
+    resize: none !important;
+  
+    &::placeholder {
+      color: $color-dark;
+    }
+  
+    &-lg {
+      font-size: 16px;
+    }
+  }
+  

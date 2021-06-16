@@ -1,0 +1,26 @@
+body {
+    font-family: $base-font;
+    font-size: 16px;
+    line-height: 22px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    overflow-x: hidden;
+    color: $color-dark;
+  }
+  
+  .container-lg {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  
+  .container {
+    max-width: 1200px;
+  }
+  
+  .bg-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  

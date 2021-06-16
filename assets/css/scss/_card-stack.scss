@@ -1,0 +1,144 @@
+.stack-container {
+    width: calc(100% - 60px);
+    height: 620px;
+    position: relative;
+  
+    @media (max-width: 768px) {
+      width: calc(100% - 22px);
+      height: 460px;
+    }
+  
+    .stack-buttons {
+      position: absolute;
+      width: 100%;
+      bottom: 35px;
+      padding-right: 60px;
+      text-align: right;
+  
+      .btn {
+        padding: 0px !important;
+        border-width: 2px;
+        width: 32px;
+        height: 32px;
+        line-height: 25px;
+        border-radius: 30px;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  
+    .card-stack {
+      width: 100%;
+      position: relative;
+  
+      .card-list {
+        width: 300px;
+  
+        .stack-card {
+          transition: all 150ms ease-in;
+          border-radius: 2px;
+          position: absolute;
+          list-style: none;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          text-align: center;
+          background-size: cover;
+          height: 100%;
+          min-height: 620px;
+          background-color: #171a24;
+  
+          @media (max-width: 768px) {
+            min-height: 460px;
+          }
+  
+          .stack-card-inner {
+            opacity: 0;
+          }
+  
+          &:last-child {
+            background-color: #1a1e2b;
+            .stack-card-inner {
+              transition: 3s;
+              opacity: 1;
+            }
+          }
+  
+          &:nth-child(1) {
+            right: -12%;
+            top: 5%;
+            transform: scale(0.9);
+          }
+          &:nth-child(2) {
+            right: -6%;
+            top: 3%;
+            transform: scale(0.95);
+          }
+          &:nth-child(3) {
+            right: 0px;
+            top: 5%;
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes scaleCard {
+    0% {
+      top: 5px;
+    }
+    100% {
+      top: 24px;
+    }
+  }
+  
+  @keyframes bounceInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounceInRight {
+    0% {
+      opacity: 0 !important;
+      transform: translateX(-40px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  // Inner style
+  
+  .stack-card-inner {
+    text-align: left;
+    padding: 105px 45px 0;
+  
+    @media (max-width: 768px) {
+      padding: 40px 20px 0;
+    }
+  
+    .stack-card-logo {
+      height: 125px;
+  
+      @media (max-width: 768px) {
+        height: 90px;
+      }
+  
+      img {
+        max-width: 200px;
+        max-height: 70px;
+  
+        @media (max-width: 768px) {
+          max-width: 120px;
+          max-height: 60px;
+        }
+      }
+    }
+  }
+  
